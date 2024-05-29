@@ -1,0 +1,186 @@
+@import '../../../style/global.scss';
+
+.prevideos--container {
+    padding: 250px 70px;
+    background: #202229;
+    clip-path: polygon(0 65px, 100% 0, 100% 95%, 0 100%);
+    margin-top: -120px;
+    display: flex;
+    color: white;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: space-between;
+
+    .prevideos--container1 {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        max-width: 379px;
+        min-width: 350px;
+
+        .prevideos--container1--texta {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+        }
+
+        .prevideos--container11 {
+            // display: flex;
+            font-size: 54px;
+            font-weight: 700;
+            line-height: 64px;
+        }
+    }
+
+    .prevideos--container2 {
+        max-width: 499px;
+        min-width: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+
+        .prevideos--container21 {
+            display: flex;
+            gap: 16px;
+
+            .prevideos--container211 {
+                // animation: fadeOutIn 1s ease-in-out forwards;
+                // opacity: 0;
+            }
+
+
+            .prevideos--container212--div {
+                margin-bottom: 56px;
+
+                p:first-child {
+                    font-size: 34px;
+                    font-weight: 600;
+                    line-height: 44px;
+                    text-align: left;
+                    margin-bottom: 4px;
+                }
+
+                p:nth-child(2) {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    text-align: left;
+                    color: #8a8a8a;
+                    margin-bottom: 10px;
+                }
+
+                p:last-child {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 18px;
+                    text-align: left;
+                    color: #8a8a8a;
+
+                }
+
+            }
+        }
+
+        .prevideos--container2--texta {
+            font-size: 22px;
+            font-weight: 400;
+            line-height: 32px;
+            text-align: left;
+        }
+    }
+}
+
+@keyframes fadeOutIn {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-out-in {
+    animation: fadeOutIn 1s ease-in-out forwards;
+}
+
+.fade-in-out {
+    animation: fadeInOut 1s ease-in-out forwards;
+}
+
+
+@media(max-width: 930px) {
+    .prevideos--container {
+        padding: 250px 16px;
+        background: #202229;
+        clip-path: polygon(0 65px, 100% 0, 100% 95%, 0 100%);
+        margin-top: -120px;
+        display: flex;
+        color: white;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: space-between;
+
+        .prevideos--container1 {
+            display: flex;
+            flex-direction: column;
+            gap: 44px;
+            max-width: 100%;
+            min-width: 350px;
+            margin-bottom: 44px;
+
+            .prevideos--container1--texta {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 32px;
+                text-align: left;
+            }
+
+            .prevideos--container11 {
+                font-size: 48px;
+                font-weight: 700;
+                line-height: 48px;
+            }
+        }
+
+        .prevideos--container2 {
+            max-width: 100%;
+            min-width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+
+            .prevideos--container21 {
+                display: flex;
+                gap: 16px;
+
+                .prevideos--container212--div {
+                    margin-bottom: 56px;
+
+                    p:first-child {
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .prevideos--container2--texta {
+                font-size: 18px;
+                font-weight: 400;
+                line-height: 32px;
+                text-align: left;
+            }
+        }
+    }
+}

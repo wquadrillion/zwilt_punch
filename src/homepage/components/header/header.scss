@@ -1,0 +1,31 @@
+@import '../../../style/global.scss';
+
+.header--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 9px 14px 24px;
+    background: #525AA0;
+    border-radius: 15px;
+    margin-top: 36px;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu--options {
+        p {
+            cursor: pointer;
+        }
+    }
+
+}
+
+
+
+@media(max-width: 930px) {
+    .header--container {
+        margin-top: 24px;
+    }
+}

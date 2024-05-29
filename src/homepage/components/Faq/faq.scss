@@ -1,0 +1,228 @@
+@import '../../../style/global.scss';
+
+.faq--container {
+    padding: 134px 0;
+    padding-bottom: 180px;
+    background: #F3F3F3;
+
+    .faq--container--texta {
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 54px;
+        text-align: center;
+        margin-bottom: 88px;
+    }
+
+    .faq--container1 {
+
+        .faq--container11 {
+
+
+
+            .faq--container11--div {
+                border: solid .5px #E8E8E8;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+
+
+                .faq--container11--texta,
+                .faq--container11--textb {
+                    width: 230px;
+                    font-size: 22px;
+                    font-weight: 600;
+                    line-height: 24px;
+                    text-align: center;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 112px;
+                    transition: background .3s ease;
+                    cursor: pointer;
+
+
+                    &:hover {
+                        background: #E8E8E8;
+                        transition: background .3s ease;
+                    }
+                }
+
+                .faq--container11--texta {
+                    border-right: solid .5px #E8E8E8;
+                }
+
+                .faq--container11--div1 {
+                    height: 112px;
+                    transition: background .3s ease;
+                    position: relative;
+
+
+                    &:hover {
+                        background: #E8E8E8;
+
+                        .pointer--div {
+                            opacity: 1;
+                            transition: opacity .3 ease;
+                        }
+                    }
+
+                    flex: 1;
+                    justify-content: center;
+                    // align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    // text-align: center;
+                    cursor: pointer;
+                    position: relative;
+
+                    div {
+                        // background: green;
+                        display: flex;
+                        justify-content: end;
+                    }
+
+                    P {
+                        font-size: 22px;
+                        font-weight: 400;
+                        line-height: 24px;
+                        text-align: center;
+                        position: relative;
+                        width: fit-content;
+                        right: 450px;
+                        display: flex;
+                    }
+
+                    .pointer--div {
+                        position: absolute;
+                        right: 32px;
+                        opacity: 0;
+                        transition: opacity .3 ease;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+}
+
+
+
+
+
+@media (max-width: 1130px) {
+    .faq--container {
+        padding: 50px 0;
+        padding-bottom: 180px;
+        background: #F3F3F3;
+
+        .faq--container--texta {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 48px;
+            text-align: center;
+            margin-bottom: 88px;
+        }
+
+        .faq--container1 {
+
+            .faq--container11 {
+                .faq--container11--div {
+
+                    border: solid 0 ;
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    flex-direction: column;
+                    height: 88px;
+
+
+
+                    .faq--container11--texta,
+                    .faq--container11--textb {
+                        width: 100%;
+                        font-size: 22px;
+                        font-weight: 600;
+                        line-height: 24px;
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        // height: 0;
+                        transition: background .3s ease;
+                        cursor: pointer;
+
+
+                        &:hover {
+                            background: #E8E8E8;
+                            transition: background .3s ease;
+                        }
+                    }
+
+                    .faq--container11--texta {
+                        border-right: solid 0 #E8E8E8;
+                    }
+
+                    .faq--container11--div1 {
+                        height: 0;
+                        width: 100%;
+                        transition: background .3s ease;
+                        position: relative;
+                        padding: 0 18px 0 16px;
+                        border: solid 1px #e8e8e8;
+
+
+                        &:hover {
+                            background: #E8E8E8;
+
+                            .pointer--div {
+                                opacity: 1;
+                                transition: opacity .3 ease;
+                            }
+                        }
+
+                        flex: 1;
+                        justify-content: center;
+                        // align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        // text-align: center;
+                        cursor: pointer;
+                        position: relative;
+
+                        div {
+                            // background: green;
+                            display: flex;
+                            justify-content: end;
+                        }
+
+                        P {
+                            font-size: 22px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            text-align: center;
+                            position: relative;
+                            width: 100%;
+                            right: 0;
+                            display: flex;
+                            align-self: flex-start;
+                        }
+
+                        .pointer--div {
+                            position: absolute;
+                            right: 24px;
+                            opacity: 0;
+                            transition: opacity .3 ease;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,56 @@
+@import '../../../style/global.scss';
+
+
+.button--container {
+    width: 240px;
+    height: 74px;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+
+
+    &:hover {
+        button {
+            width: 240px;
+            transition: width .4s ease;
+        }
+
+        .button--container--text {
+            color: white;
+            left: 24px;
+            transition: left .4s ease, color .4s ease;
+        }
+    }
+
+    button {
+        width: 74px;
+        position: relative;
+        z-index: 1;
+        background: black;
+        border-radius: 30px;
+        transition: width .4s ease;
+        border: none;
+
+
+        .button--container--img {
+            position: absolute;
+            right: 21px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+    }
+
+    .button--container--text {
+        z-index: 2;
+        position: absolute;
+        left: 85px;
+        color: rgb(0, 0, 0);
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 18px;
+        transition: left .4s ease, color .4s ease;
+    }
+}
